@@ -1,0 +1,31 @@
+def main():
+    print("Приветствую!")
+    print("Это базовый калькулятор")
+    print("Доступные операции: + (сложение), - (вычитание), * (умножение), / (деление), ** (возведение в степень))
+    print("Сначала вводите первое число, затем операцию (символ или полное название текстом), потом второе число")
+    
+    num1 = float(input("Первое число: "))
+    operation = input("Операция: ").upper()
+    num2 = float(input("Второе число: "))
+    
+    if (operation == "+") or (operation == "СЛОЖЕНИЕ"):
+        print(f'Результат: {num1 + num2}')
+    elif (operation == "-") or (operation == "ВЫЧИТАНИЕ"):
+        print(f'Результат: {num1 - num2}')
+    elif (operation == "*") or (operation == "УМНОЖЕНИЕ"):
+        if (num1 == 0) or (num2 == 0):
+            print('Умножать что-то на ноль? Гений')
+        else:
+            print(f'Результат: {num1 * num2}')
+    elif (operation == "/") or (operation == "ДЕЛЕНИЕ"):
+        if num2 == 0:   
+            print('А фто ты ожидал?.')
+        else:
+            print(f'Результат: {num1 / num2}')
+    elif (operation == '**') or (operation == 'ВОЗВЕДЕНИЕ В СТЕПЕНЬ'):   
+        print(f'Результат: {num1 ** num2}')
+    else:
+        print('Проверьте, пожалуйста, корректность вводимых Вами данных. Где-то ошибочка')
+
+if __name__ == "__main__":
+    main()
