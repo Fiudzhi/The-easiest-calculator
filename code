@@ -19,7 +19,7 @@ def main():
             print(f'Результат: {num1 * num2}')
     elif (operation == "/") or (operation == "ДЕЛЕНИЕ"):
         if num2 == 0:   
-            print('А фто ты ожидал?.')
+            print('А фто ты ожидал?')
         else:
             print(f'Результат: {num1 / num2}')
     elif (operation == '**') or (operation == 'ВОЗВЕДЕНИЕ В СТЕПЕНЬ'):   
